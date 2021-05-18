@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 exports.handler = async function (e, ctx, cb) {
-  const { lat, lon } = e.queryStringParameter
+  const { lat, lon } = e.queryStringParameters
   const { WEATHER_API_KEY } = process.env
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
 
