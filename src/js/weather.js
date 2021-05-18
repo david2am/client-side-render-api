@@ -14,7 +14,7 @@ async function success(position) {
 
     document.querySelector('#weather').classList.remove('hidden')
   } catch (e) {
-    console.error(e.msg)
+    console.error(e)
   }
 }
 
